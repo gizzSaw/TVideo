@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gizz Video</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
             <a class="header__link" href="#">
-                <svg class="header__logo" viewBox="0 0 240 32" role="img" 
-                    aria-label="Логотип сервиса">
+                <svg class="header__logo" viewBox="0 0 240 32" role="img" aria-label="Логотип сервиса">
                     <use xlink:href="image/sprite.svg#logo-orange"></use>
                 </svg>
             </a>
             <a class="header__link header__link_favorite" href="/favorite.html">
                 <span>Избранное</span>
+
+                <svg class="header__icon">
+                    <use xlink:href="image/sprite.svg#star-ob"></use>
+                </svg> 
             </a>
-            <svg class="header__icon">
-                <use xlink:href="image/sprite.svg#star-ob"></use>
-            </svg>
         </div>
     </header>
 
@@ -27,7 +31,7 @@
         <section class="search">
             <div class="container search__container">
                 <form class="search__form">
-                    <input class="search__input" type="search" >
+                    <input class="search__input" type="search">
                     <button class="search__btn" type="submit">
                         <span>поиск</span>
                         <svg class="search__icon">
@@ -41,21 +45,28 @@
         <section class="video">
             <div class="container">
                 <div class="video__player">
-                    <iframe class="video__iframe" 
-                    src="https://www.youtube.com/embed/klmpiHLSuXA?si=3JesDA58HlJujQsp" 
-                    frameborder="0" allowfullscreen
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture; web-share"
-                    ></iframe>
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/klmpiHLSuXA?si=3JesDA58HlJujQsp"
+                        frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share"></iframe>
                 </div>
-                <div class="video__content">
-                    <h2 class="video__title">Философия Идущего к реке</h2>
-                    <p class="video__channel">Правое полушарие интроверта</p>
-                    <p class="video__info">
-                        <span class="video__views">1 575 581 просмотр</span>
-                        <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>  
-                    </p>
-                    <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+                <div class="video__container">
+                    <div class="video__content">
+                        <h2 class="video__title">Философия Идущего к реке</h2>
+                        <p class="video__channel">Правое полушарие интроверта</p>
+                        <p class="video__info">
+                            <span class="video__views">1 575 581 просмотр</span>
+                            <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>
+                        </p>
+                        <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+                    </div>
+
+                    <button class="video__link video__link_active" href="/favorite.html">
+                        <span class="video__no-favorite">Избраное</span>
+                        <span class="video__favorite">В избранном</span>
+                        <svg class="video__icon">
+                            <use xlink:href="image/sprite.svg#star-ob"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -66,38 +77,35 @@
                 <ul class="video-list__items">
                     <li class="video-list__item">
                         <article class="video-card">
-                            <a class="video-card__link" href="#" >
-                                <img class="video-card__thumbnail" src="image/img1.jpg" 
-                                alt="превью идущего к реке" >
+                            <a class="video-card__link" href="#">
+                                <img class="video-card__thumbnail" src="image/img1.jpg" alt="превью идущего к реке">
                                 <h3 class="video-card__title">Философия Идущего к реке</h3>
                                 <p class="video-card__channel">Правое полушарие интроверта</p>
                                 <p class="video-card__duration">31 мин 25 сек</p>
                             </a>
-                            <button class="video-card__favorite" type="button" 
-                                aria-label="добавить в изобраное">
+                            <button class="video-card__favorite" type="button" aria-label="добавить в изобраное">
                                 <svg class="video-card__icon">
                                     <use class="star-o" xlink:href="image/sprite.svg#star-ob"></use>
                                     <use class="star" xlink:href="image/sprite.svg#star"></use>
                                 </svg>
-                            </рbutton>
+                                </рbutton>
                         </article>
                     </li>
                     <li class="video-list__item">
                         <article class="video-card">
-                            <a class="video-card__link" href="#" >
-                                <img class="video-card__thumbnail" src="image/img2.jpg" 
-                                alt="превью идущего к реке" >
+                            <a class="video-card__link" href="#">
+                                <img class="video-card__thumbnail" src="image/img2.jpg" alt="превью идущего к реке">
                                 <h3 class="video-card__title">Как выжить в Средние века?</h3>
                                 <p class="video-card__channel">Правое полушарие интроверта</p>
                                 <p class="video-card__duration">31 мин 25 сек</p>
                             </a>
-                            <button class="video-card__favorite video-card__favorite_active" type="button" 
+                            <button class="video-card__favorite video-card__favorite_active" type="button"
                                 aria-label="добавить в изобраное">
                                 <svg class="video-card__icon">
                                     <use class="star-o" xlink:href="image/sprite.svg#star-ob"></use>
                                     <use class="star" xlink:href="image/sprite.svg#star"></use>
                                 </svg>
-                            </рbutton>
+                            </button>
                         </article>
                     </li>
                 </ul>
@@ -108,33 +116,32 @@
     <footer class="footer">
         <div class="container footer-container">
             <a class="footer__link" href="#">
-                <svg class="footer__logo" viewBox="0 0 360 48" role="img" 
-                    aria-label="Логотип сервиса">
+                <svg class="footer__logo" viewBox="0 0 360 48" role="img" aria-label="Логотип сервиса">
                     <use xlink:href="image/sprite.svg#logo-white"></use>
                 </svg>
             </a>
             <ul class="footer__developers">
                 <li class="footer__developers-item">
-                    Designer: <a class="footer__developers-link" href="https://t.me/Mrshmallowww" 
-                                    target="_blank" rel="noopener"> 
+                    Designer: <a class="footer__developers-link" href="https://t.me/Mrshmallowww" target="_blank"
+                        rel="noopener">
                         Anastasia Ilina
-                                </a> /*rel="noopener" чтоб не пердавать 
-                                данные откуда мы пришли*/
+                    </a> /*rel="noopener" чтоб не пердавать
+                    данные откуда мы пришли*/
                 </li>
                 <li class="footer__developers-item">
-                    Developer: <a class="footer__developers-link" href="#" 
-                                target="_blank" rel="noopener"> 
+                    Developer: <a class="footer__developers-link" href="#" target="_blank" rel="noopener">
                         Savely Kononov
-                                </a> /*rel="noopener" чтоб не пердавать 
-                                данные откуда мы пришли*/
+                    </a> /*rel="noopener" чтоб не пердавать
+                    данные откуда мы пришли*/
                 </li>
             </ul>
             <p class="footer__copyright">
-                © You-Tvideo, 2023 
+                © You-Tvideo, 2023
             </p>
         </div>
     </footer>
 
     <footer class="footer"></footer>
 </body>
+
 </html>
